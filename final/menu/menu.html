@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--the styles for the home page
+Name: Nikkia Miklos
+Date: Spring '24
+Class: CGS1821 OM1 Professor Chambers
+Assignment: final project
+Language: HTML
+Page: Bakery Menu
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="stylesheet" href="../styles/menu.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo">
+        <h1>Nikkia's Sweet Spot</h1>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="../about/aboutus.html">About Us</a></li>
+            <li><a href="../final_project_form/classform.html">Class Sign-Up</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="section">
+            <h2>Menu</h2>
+            <p> Our menu changes daily and seasonally but these are a few items we carry regularly. We make everything from scratch in small batches so our products do run out and availability changes all the time. If you are wanting something specific, please give us a call and we can let you know if we have it available at the time. All whole cakes and pies must be ordered at least 48 hours in advance.<br><br> 
+            *Nothing in our bakery is gluten free. We make some items that have no gluten ingredients but our kitchen is very small and cross contamination is always a possibility. </p>
+        </section>   
+        <aside>
+            <img src="../images/googlemap.JPG" alt="Map">
+            <ul>
+            <li>Address:<br>123 N Main St, Jacksonville, FL 32202</li>
+            <li>Phone:<br>904-867-5309</li>
+            <li>Email: info@sweets.com</li>
+            <li>Hours:<br> M-F 6am-3pm</li>
+            </ul>
+        </aside>
+    </main>
+    <table>
+        <caption>Current Menu</caption>
+        <thead>
+            <tr>
+                <th class="col">Cakes</th>
+                <th class="col">Pies</th>
+                <th class="col">Cookies</th>
+                <th class="col">Coffee</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> 
+                <th>Chocolate Dream</th>
+                <th>Blueberry</th>
+                <th>Peanut Butter</th>
+                <th>Bob's Drip</th>
+            </tr>
+            <tr>
+                <th>Vanilla Bean</th>
+                <th>Apple</th>
+                <th>Chocolate Chip</th>
+                <th>Latte</th>
+            </tr>
+            <tr>
+                <th>Red Velvet</th>
+                <th>Cherry</th>
+                <th>Pb & J</th>
+                <th>Capuccino</th>
+            </tr>
+            <tr>
+                <th>Carrot Cake</th>
+                <th>Key Lime</th>
+                <th>Oatmeal</th>
+                <th>Chai Latte</th>
+            </tr>
+            <tr>
+                <th>Cheesecake</th>
+                <th>Chocolate Silk</th>
+                <th>M&M</th>
+                <th>Cold Brew</th>
+            </tr>
+            <tr>
+                <th>German Chocolate</th>
+                <th>Strawberry Rhubarb</th>
+                <th>Macadamia Nut</th>
+                <th>Espresso</th>
+            </tr>
+            <tr>
+                <th>Rainbow Confetti</th>
+                <th>Fruits of The Forest</th>
+                <th>Ginger Snap</th>
+                <th>Iced Coffee</th>
+            </tr>
+            <tr>
+                <th>Pineapple Upside-Down</th>
+                <th>Pumpkin</th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <th colspan="4">Menu is updated with new flavors every Monday!</th>
+            </tr>
+        </tbody>
+    </table>
+<footer>
+<p>&copy; 2024 Nikkia Miklos All Photos are Property of the webmaster</p>
+</footer>
+</body>
+</html>

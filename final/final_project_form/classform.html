@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+Name: Nikkia Miklos
+Date: Spring '24
+Class: CGS1821 OM1 Professor Chambers
+Assignment: final project form page
+Language: HTML
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikkia's Sweetspot</title>
+    <link rel="stylesheet" href="../styles/main_flex.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/slicknav.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="../images/logo.png" alt="Logo">
+        <h1>Nikkia's Sweet Spot</h1>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../menu/menu.html">Menu</a></li>
+            <li><a href="../about/aboutus.html">About Us</a></li>
+            <li><a href="classform.html">Class Sign-Up</a></li>
+        </ul>
+    </nav>
+<main>
+    <section>
+        <h2>Please Enter the Below Info to Sign-up for our Baking Classes:</h2>
+        <form action="thankyou.html" method="get"
+        		name="registration_form" id="registration_form">
+    			<fieldset>
+	        		<legend>Bakery Class Sign-Up</legend>
+	        		<label for="email">E-Mail:</label>
+	        		<input type="email" name="email" id="email" autofocus required><br>
+        			<label for="first_name">First Name:</label>
+					<input type="text" name="first_name" id="first_name" required><br>
+					<label for="last_name">Last Name:</label>
+					<input type="text" name="last_name" id="last_name" required><br>
+					<label for="address">Billing Address:</label>
+					<input type="text" name="address" id="address"><br>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city" required><br>
+					<label for="state">State:</label>
+					<input type="text" name="state" id="state" required maxlength="2" placeholder="2-character code"><br>
+					<label for="zip">ZIP Code:</label>
+					<input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" 
+				           pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+					<label for="phone">Phone Number:</label>
+					<input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+				       	   pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+				</fieldset>
+				<fieldset>
+					<legend>Order Info</legend>
+					<label for="order_information">Class Type:</label>
+					<select name="order_information" id="order_information">
+				    	<option value="m">Baking Series</option>
+				    	<option value="d">Special Event</option>            
+				    	<option value="s">Single Class</option>
+					</select><br>
+					<label for="slots">Number of Bakers:</label>
+					<input type="text" name="slots" id="slots" placeholder="Number of Bakers"><br>
+				</fieldset>
+				<fieldset id="radio">
+					<legend>Payment Method</legend>
+                        Pay In Person<input type="radio" name="payment_method" id="payment_method1" value="Pay_in_Person">
+						Credit Card<input type="radio" name="payment_method" id="payment_method2" value="credit_card"><br>
+				</fieldset>
+				<fieldset>
+					<legend>Credit Card Information</legend>
+					<label for="ordering_information">Credit Card:</label>
+						<select name="ordering_information" id="ordering_information">
+				    	<option value="v">Visa</option>
+				    	<option value="m">Mastercard</option>            
+				    	<option value="d">Discover</option>
+						</select><br>
+					<label for="card_number">Card Number:</label>
+						<input type="text" name="card_number" id="card_number" placeholder="16 digits" pattern="\d{16}"><br>
+					<label for="exp_date">Expiration Date:</label>
+						<select name="exp_month" id="exp_date">
+				    	<option value="1">January</option>
+				    	<option value="2">February</option>            
+				    	<option value="3">March</option>
+							<option value="4">April</option>
+							<option value="5">May</option>
+							<option value="6">June</option>
+							<option value="7">July</option>
+							<option value="8">August</option>
+							<option value="9">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select>
+						<select name="exp_year">
+				    	<option value="24">2024</option>
+				    	<option value="25">2025</option>            
+				    	<option value="26">2026</option>
+							<option value="27">2027</option>
+							<option value="28">2028</option>
+						</select>
+				</fieldset>
+				<fieldset id="buttons">
+					<legend>Submit Your Order</legend>
+					<label>&nbsp;</label>
+                    <input type="submit" id="submit" value="Submit">
+					<input type="reset" id="reset" value="Reset Fields"><br>
+				</fieldset>
+			</form>	
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Nikkia Miklos All Photos are Property of the webmaster</p>
+</footer>
+</body>
+</html>

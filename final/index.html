@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <!--
 Name: Nikkia Miklos
-Date: 02/11/24
-Class: CGS1821
+Date: Spring '24
+Class: CGS1821 OM1 Professor Chambers
 Assignment: final project
 Language: HTML
 -->
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="utf-8" />
-	<link rel="shortcut icon" href="images/favicon.ico">
-  	<link rel="stylesheet" href="styles/mainn.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script type="text/javascript">
-					$(document).ready(function(){
-						$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
-						});
-	</script>
-	<title>Nikkia's Sweet Spot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nikkia's Sweetspot</title>
+    <link rel="stylesheet" href="styles/main_flex.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <header class=header>
-            <h1>Nikkia's Sweet Spot</h1>
-        </header>    
-    <div class="logo">
-        <img src="images/logo.png" alt="Logo" width="200px">
-    </div>
-    <nav class="navigation">
+    <header>
+        <img src="images/logo.png" alt="Logo">
+        <h1>Nikkia's Sweet Spot</h1>
+    </header>
+    <nav id="mobile_menu"></nav>
+    <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
+            <li><a href="menu/menu.html">Menu</a></li>
             <li><a href="about/aboutus.html">About Us</a></li>
-            <li><a href="classes/classes.html">Classes</a></li>
-            <li><a href="wholesale/wholesale.html">Wholesale</a></li>
+            <li><a href="final_project_form/classform.html">Class Sign-Up</a></li>
         </ul>
     </nav>
-    <section class=section>
-        <div><h1>The pick me up you need!</h1></div>
-    </section>
     <main>
-        <div><img src="images/bluecake.jpg" alt="Blue Cake"></div>
-        <div><img src="images/strawberrycake.jpg" alt="Strawberry Cake"></div>
-        <div><img src="images/geode cake2.jpg" alt="Geode 2"></div>
+        <section id="section">
+            <img src="images/award.png" alt="Award">
+            <h2>Nikkia's Sweet Spot is an Award-Winning, family owned bakery specializing in desserts and breakfast pastries. Everything we make is baked from scratch in our kitchen.
+            </h2>
+        </section>   
+        <aside>
+            <img src="images/googlemap.JPG" alt="Map">
+            <ul>
+            <li>Address:<br>123 N Main St, Jacksonville, FL 32202</li>
+            <li>Phone:<br>904-867-5309</li>
+            <li>Email: info@sweets.com</li>
+            <li>Hours:<br> M-F 6am-3pm</li>
+            </ul>
+        </aside>
     </main>
+    <div>
+        <img src="images/bluecake.jpg" alt="Blue Cake"><img src="images/strawberrycake.jpg" alt="Strawberry Cake"><img src="images/geode.jpg" alt="Geode">
+    </div>
     <footer>
         <p>&copy; 2024 Nikkia Miklos All Photos are Property of the webmaster</p>
     </footer>
-    </div>
 </body>
 </html>

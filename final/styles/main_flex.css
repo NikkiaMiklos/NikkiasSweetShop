@@ -1,0 +1,279 @@
+/*
+Main style sheet
+Name: Nikkia Miklos
+Date: Spring '24
+Class: CGS1821 OM1 Professor Chambers
+Assignment: final project
+Language: HTML
+*/
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	max-width: 960px;
+	width: 96%;
+	background-color: white;
+	margin: 0 auto; 
+	padding: 0;
+	border: 3px solid black;
+	box-shadow: 0 9px 18px 9px;
+}
+
+/* Header */
+header {
+    padding: .875%;
+	background-color: rgb(0, 202, 177);
+	width: auto;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content:space-around
+}
+header img { 
+	float: left; 
+	border-radius: 20%;
+	padding: .5%;  
+	width: 20%;
+	max-width: 185px;
+	min-width: 30px;
+} 
+header h2 {
+	font-size: 230%;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+}
+
+/* Navigation menu */
+#nav_menu {
+	clear: left;
+	font-weight: bold;
+}
+#nav_menu ul {
+	list-style: none;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+#nav_menu ul li {
+	flex-basis: 25%;
+}
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: #DE2386;
+	color: black;
+}
+#nav_menu ul li a.current {
+	color: rgb(0, 202, 177);
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: lightgray;
+}
+/* Main */
+main {
+    display: flex;
+	background-image: url("../images/pretzels2.jpg");
+}
+div p {
+	font-weight: bolder;
+	padding: 1.25em;
+}
+main img {
+	border-radius: 25px;
+	margin: .5%;
+	width: 40%;
+	max-width: 340px;
+	max-height: 380px;
+	display: block;
+	margin:auto;
+	
+}
+main p {
+	font-weight: bolder;
+	padding: 1em;
+}
+/* Sidebar */
+aside {
+	width: 20%;
+    flex-basis: 25%;
+	padding: 1.25em;
+	font-weight: bolder;
+	background-color: rgb(211, 211, 211,.7);
+	font-size: 16px;
+	order: 1;
+}
+aside img {
+	width: 95%;
+	max-width: 360px;
+	border-radius: 20%;
+}
+/* Section */
+section {
+	float: right;
+    flex-basis: 78.5%;
+	padding: 1.25em 5% 1.25em 2.5%;
+	background-color: rgb(211, 211, 211,.35);
+    order: 2;
+}
+section h1 { 
+	font-size: 140%;
+	margin-bottom: .5em;
+}
+section form {
+	background-color: rgb(211, 211, 211,.75);
+}
+Section img {
+	border-radius: 50%;
+}
+div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+div img {
+	border-radius: 25px;
+	margin: .5%;
+	width: 30%;
+	max-width: 340px;
+}
+div p{
+	font-family: "Cookie", cursive;
+	font-weight: 350;
+	font-style: normal;
+	font-size: 150%;
+}
+main.pic {
+	max-width: 50%;
+}
+/*form*/
+fieldset {
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: .5em 1em;
+}
+legend {
+    color: black;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 2px solid #DE2386;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+	border: 2px solid #DE2386;
+}
+br {
+    clear: both;
+}
+#buttons input {
+	width: 10em;
+}
+a.button {
+    padding: 1px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 3px;
+    color: black;
+    background-color: #DE2386;
+    text-decoration: none;
+	font-size: 90%;
+	max max-width: 20%;
+}
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: 1.875%;
+    background-color: rgb(0, 202, 177);
+	color: white;
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
+
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 800px) {
+	html {
+		background-image: none;
+	}
+	body {
+		font-size: 90%;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (max-width: 667px) {
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	header h2 {
+		font-size: 200%;
+	}
+    main {
+        flex-direction: column;
+    }
+	section {
+	/*	width: 90%;*/
+	/*	float: none;*/
+		padding-left: 5%;
+		padding-bottom: .5em;
+        order: 1;
+	}
+	aside {
+	/*	width: 90%;*/
+	/*	float: none;*/
+		padding: 0 5% 1em 5%;
+        order: 2;
+	}
+	#nav_list ul {
+		width: 50%;
+		padding-left: 25%;
+		text-align: center;
+	}
+	#nav_list ul li a {
+		padding-left: 0;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+	section h1 {
+		font-size: 130%;
+	}
+	section h1:first-letter {
+		font-size: 180%;
+	}
+}
